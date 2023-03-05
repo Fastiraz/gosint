@@ -13,10 +13,10 @@ type Website struct {
 	ErrorType         string `json:"errorType"`
 	Url               string `json:"url"`
 	UrlMain           string `json:"urlMain"`
-	UsernameClaimed   string `json:"username_claimed"`
+	nameClaimed   string `json:"name_claimed"`
 }
 
-func main() {
+func uname(name string) {
 	// Read the JSON file
 	data, err := ioutil.ReadFile("data.json")
 	if err != nil {
@@ -32,14 +32,14 @@ func main() {
 		os.Exit(1)
 	}
 
-	// Prompt the user for a username
-	var username string
-	fmt.Print("Enter a username: ")
-	fmt.Scanln(&username)
+	// Prompt the user for a name
+	//var name string
+	//fmt.Print("Enter a name: ")
+	//fmt.Scanln(&name)
 
-	// Replace the "{}" in the URLs with the username and make an HTTP GET request to each URL
+	// Replace the "{}" in the URLs with the name and make an HTTP GET request to each URL
 	for name, website := range websites {
-		url := strings.Replace(website.Url, "{}", username, 1)
+		url := strings.Replace(website.Url, "{}", name, 1)
 		response, err := http.Get(url)
 		if err != nil {
 			fmt.Printf("\x1b[31m%s: Error making request: %v\x1b[0m\n", name, err)
@@ -58,4 +58,36 @@ func main() {
 	}
 
 	fmt.Println("Requests completed successfully.")
+}
+
+func help() {
+	print(`
+		GOSInt is an osint tool.
+
+			FLAGS:
+				-h : Display this message
+				-n : Looking for a name
+				-l : LinkedIn
+				-i : Instagram
+				-f : FaceBook
+				-g : Google
+				-t : Twitter
+
+			EXAMPLE:
+				gosint -n name
+	`)
+}
+
+func main() {
+	argv := os.Args
+	for i:=1; i<len(argv); i++ {
+		if argv[i] == "-h" {
+			help()
+		} else if argv[i] == "-n" {
+			name := argv[i+1]
+			uname(name)
+		} else {
+			help()
+		}
+	}
 }

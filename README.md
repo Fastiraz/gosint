@@ -1,6 +1,8 @@
 # GOSInt
 
-This is a Go script that reads a JSON file containing a list of websites and URLs, prompts the user for a username, replaces the "{}" in the URLs with the username, and makes an HTTP GET request to each URL to check if the username exists.
+![GOSInt](./img/GOSInt-removebg-preview.png)
+
+This is a Go script that reads a JSON file containing a list of websites and URLs, prompts the user for a username, replaces the `{}` in the URLs with the username, and makes an HTTP GET request to each URL to check if the username exists.
 
 >**Warning**
 >It's not working well, i just made it for learning Golang :)
@@ -23,7 +25,7 @@ go run main.go
 
 4. Enter a username when prompted
 
-The script will then make an HTTP GET request to each URL in the JSON file with the "{}" replaced by the username and print the result for each URL.
+The script will then make an HTTP GET request to each URL in the JSON file with the `{}` replaced by the username and print the result for each URL.
 
 ## Example
 
@@ -53,7 +55,7 @@ Suppose we have the following JSON file named `data.json`:
 }
 ```
 
-And suppose we run the script and enter the username "example_user" when prompted. The output might look like this:
+And suppose we run the script and enter the username `example_user` when prompted. The output might look like this:
 
 ```bash
 7Cups: 200 OK
