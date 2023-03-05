@@ -1,4 +1,4 @@
-# Website Username Checker
+# GOSInt
 
 This is a Go script that reads a JSON file containing a list of websites and URLs, prompts the user for a username, replaces the "{}" in the URLs with the username, and makes an HTTP GET request to each URL to check if the username exists.
 
@@ -63,5 +63,3 @@ Requests completed successfully.
 ```
 
 In this example, the 7Cups URL returned a successful response with a status code of 200, while the 8tracks and 9GAG URLs both returned a client error with a status code of 404.
-
-You can save this markdown text to a file with a `.md` extension (e.g. `README.md`) and add it to your GitHub repository. Be sure to customize it to your own script and include any relevant information such as dependencies, installation instructions, or usage examples.
