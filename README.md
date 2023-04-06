@@ -7,6 +7,12 @@ This is a Go script that reads a JSON file containing a list of websites and URL
 >**Warning**
 >It's not working well, i just made it for learning Golang :)
 
+- [x] [Username]
+- [ ] [Phone]
+- [ ] [Social Network] (Instagram, Twitter, LinkedIn, Facebook, Github...)
+- [ ] [Google] (like GHunt)
+- [ ] [Email]
+
 The script prints the name of each website and the status code and message of the HTTP response for each URL in different colors based on the status code:
 - Green: Status code 2xx (successful response)
 - Yellow: Status code 4xx (client error)
