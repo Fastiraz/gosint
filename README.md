@@ -1,4 +1,4 @@
-# GOSInt
+# GOSINT
 
 ![GOSInt](./img/GOSInt-removebg-preview.png)
 
