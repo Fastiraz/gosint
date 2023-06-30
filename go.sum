@@ -349,6 +349,8 @@ github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/subosito/gotenv v1.2.0/go.mod h1:N0PQaV/YGNqwC0u51sEeR/aUtSLEXKX9iv69rRypqCw=
 github.com/sundowndev/dorkgen v1.3.1 h1:piBvKO8gCGK0nEcUPHkdTEaKveKr442B83Hf0pyBNkw=
 github.com/sundowndev/dorkgen v1.3.1/go.mod h1:n6ViY6jWWp/T5JpHdFqtlMKCMHx56i/i1Xk/kDSgjYQ=
+github.com/sundowndev/phoneinfoga v1.10.12 h1:lXHpltmy8RD/JlJmTdYqnwwMxqskoOR74oMoVJ1DPc0=
+github.com/sundowndev/phoneinfoga v1.10.12/go.mod h1:wiGiPDTZk0YtYNwFz3ygOjE483w5DQIEmRy0VqLQQo4=
 github.com/sundowndev/phoneinfoga/v2 v2.10.4 h1:lQb4qzpYkxdiB6eFZrU9gLqgJp3m9Jdjmo7XSmjTJj0=
 github.com/sundowndev/phoneinfoga/v2 v2.10.4/go.mod h1:iJy1IgGZfZErQ4JgRqh6cwJ4Ds1vqikc/Ez9LtlA+9U=
 github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5/go.mod h1:ncp9v5uamzpCO7NfCPTXjqaC+bZgJeR0sMTm6dMHP7U=

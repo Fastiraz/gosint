@@ -4,19 +4,17 @@ import ("fmt")
 
 func Help() {
 	fmt.Println(`
-		GOSInt is an osint tool.
+		GOSInt is an OSINT tool.
 
-			FLAGS:
-				-h : Display this message
-				-n : Looking for a name
-				-p : Phone number
-				-l : LinkedIn
-				-i : Instagram
-				-f : FaceBook
-				-g : Google
-				-t : Twitter
+		FLAGS:
+			-h, --help    : Display this message
+			-n, --name    : Search for a name
+			-p, --phone   : Phone number lookup (dev)
+			-g, --github  : GitHub email lookup
+			-d, --discord : Discord Token Recovery
+			-@, --email   : Find where an email is register (dev)
 
-			EXAMPLE:
-				gosint -n name
+		EXAMPLE:
+			gosint -n name
 	`)
 }

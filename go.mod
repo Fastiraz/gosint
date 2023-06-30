@@ -31,6 +31,7 @@ require (
 	github.com/spf13/cobra v1.1.3 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/sundowndev/dorkgen v1.3.1 // indirect
+	github.com/sundowndev/phoneinfoga v1.10.12 // indirect
 	github.com/sundowndev/phoneinfoga/v2 v2.10.4 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	go.opencensus.io v0.23.0 // indirect
@@ -46,4 +47,3 @@ require (
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
-
