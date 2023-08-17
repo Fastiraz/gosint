@@ -2,18 +2,24 @@
 
 ![GOSInt](./img/GOSInt-removebg-preview.png)
 
-This is a Go script that reads a JSON file containing a list of websites and URLs, prompts the user for a username, replaces the `{}` in the URLs with the username, and makes an HTTP GET request to each URL to check if the username exists.
+
 
 >**Warning**
->It's not working well, i just made it for learning Golang :)
+>It's not working well, i work on it, i just made it for learning Golang :)
 
 
 - [x] Username
-- [ ] Phone
-- [ ] Social Network (Instagram, Twitter, LinkedIn, Facebook, Github...)
-- [ ] Google (like GHunt)
+- [x] Github email address recovery
+- [x] Discord token recovery (only first part)
 - [ ] Email
+- [ ] Phone
+- [ ] Social Network
+- [ ] Google (like GHunt)
 
+
+# Username
+
+This is a Go script that reads a JSON file containing a list of websites and URLs, prompts the user for a username, replaces the `{}` in the URLs with the username, and makes an HTTP GET request to each URL to check if the username exists.
 
 The script prints the name of each website and the status code and message of the HTTP response for each URL in different colors based on the status code:
 - Green: Status code 2xx (successful response)
@@ -75,3 +81,25 @@ Requests completed successfully.
 ```
 
 In this example, the 7Cups URL returned a successful response with a status code of 200, while the 8tracks and 9GAG URLs both returned a client error with a status code of 404.
+
+
+# Github
+
+This code is a simple Go package that retrieves the email address of the author of the latest commit made by a GitHub user. It utilizes the GitHub API to fetch the public events of a given user and extracts information from the latest commit event to obtain the associated email address.
+
+## Usage
+
+```bash
+go run main.go -g <username>
+```
+
+# Discord
+
+This code is a simple Go package that generates a partial Discord token using the given ID. It encodes the provided ID using base64 and then constructs the first part of the bot token by appending some placeholders.
+
+```bash
+go run main.go -d <user_id>
+```
+
+> [!IMPORTANT]  
+> For more information, click [here](https://fastiraz.gitbook.io/doc/documentations/hack/by-fastiraz/discord-tokens)
