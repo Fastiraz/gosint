@@ -7,6 +7,7 @@ import (
 	"gosint/lib/github" // osint 4 github email
 	"gosint/lib/discord"
 	"gosint/lib/email" // osint 4 github email (holehe)
+	"gosint/lib/card" // credit card information recovery
 )
 
 func main() {
@@ -27,6 +28,9 @@ func main() {
 				os.Exit(0)
 			case "-@", "--email":
 				email.Email(argv[i+1])
+				os.Exit(0)
+			case "-c", "--card":
+				card.Card(argv[i+1])
 				os.Exit(0)
 			default:
 				os.Stdout.WriteString(`
