@@ -43,9 +43,10 @@ func main() {
 						-g, --github  : GitHub email lookup
 						-d, --discord : Discord Token Recovery
 						-@, --email   : Find where an email is registered (dev)
+						-c, --card	  : Display credit card information
 
 					EXAMPLE:
-						gosint -n name
+						gosint -n <username>
 				`)
 		}
 	}
