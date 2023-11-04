@@ -11,6 +11,7 @@
 - [x] Username
 - [x] Github email address recovery
 - [x] Discord token recovery (only first part)
+- [x] Credit card information
 - [ ] Email
 - [ ] Phone
 - [ ] Social Network
@@ -103,3 +104,11 @@ go run main.go -d <user_id>
 
 > [!IMPORTANT]  
 > For more information, click [here](https://fastiraz.gitbook.io/doc/documentations/hack/by-fastiraz/discord-tokens)
+
+# Cards
+
+This Markdown code defines a Go (Golang) package called "card" that provides functions for working with credit card numbers. The Card function takes a cardNumber as input and performs several operations. It first removes any non-numeric characters from the input. Then, it checks if the card number is valid using the Luhn Algorithm. If it's valid, it identifies the card type based on the first digit(s) of the card number (Visa, American Express, Mastercard, Discover, or "Unknown card type") and extracts the Issuer Identification Number (IIN/BIN) from the card number. If the card number is invalid, it prints an error message. The code also includes helper functions for identifying the card type, extracting the IIN/BIN, and validating the card number. The "removeNonNumeric" function is used to remove any non-numeric characters from the input string. This package can be used for basic credit card processing tasks.
+
+```bash
+go run main.go -c <card_number>
+```
